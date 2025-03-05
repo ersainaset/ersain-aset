@@ -1,40 +1,61 @@
+/* Основной фон страницы */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Светлый фон */
 }
 
+/* Контейнер для всего контента */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e8efff; /* Легкий голубой фон для контента */
+}
+
+/* Рекламный блок */
 .advertisement {
-    background-color: #008CBA;
-    color: white;
+    background-color: #ffffff; /* Белый фон для рекламы */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 50px 20px;
+    width: 80%;
+    max-width: 800px;
 }
 
+/* Заголовок */
 .advertisement h1 {
     font-size: 36px;
     margin: 0;
+    color: #005a8d; /* Темно-синий для заголовка */
 }
 
+/* Основной текст */
 .advertisement p {
     font-size: 18px;
+    color: #333; /* Темный текст для лучшего контраста */
     margin: 20px 0;
 }
 
+/* Кнопка */
 .cta-button {
-    background-color: #ff6f61;
+    background-color: #ff6f61; /* Оранжевая кнопка */
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
+    display: inline-block;
 }
 
 .cta-button:hover {
-    background-color: #e85a47;
+    background-color: #e85a47; /* Более темный оранжевый при наведении */
 }
 
+/* Контейнер для изображения */
 .container {
     margin: 20px 0;
 }
@@ -43,10 +64,11 @@ body {
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-radius: 15px;  /* Круглые углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Круглые углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для изображения */
 }
 
+/* Список задач */
 .task-list {
     list-style-type: none;
     padding: 0;
@@ -57,5 +79,22 @@ body {
 
 .task-list li {
     margin: 10px 0;
+    color: #555; /* Темно-серый цвет для текста */
 }
 
+/* Контейнер для номера телефона */
+.phone-container {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.phone-number {
+    color: #005a8d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
